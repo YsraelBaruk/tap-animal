@@ -4,7 +4,7 @@ public class Bemtevi extends Passaro {
 
 
     @Override
-    public void tallk() {
+    public void talk() {
         System.out.println("bem-te-vi!");
     }
 }

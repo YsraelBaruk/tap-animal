@@ -20,4 +20,7 @@ public class Animal {
         System.out.println(msg);
     }
 
+    public void talk(){
+        System.out.println("Me not falar");
+    }
 }

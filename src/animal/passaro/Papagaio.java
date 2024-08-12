@@ -1,10 +1,13 @@
 package animal.passaro;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Papagaio extends Passaro {
-    private String voz;
+    private List<String> voz = new ArrayList<>();
 
     public void setVoz(String voz) {
-        this.voz = voz;
+        this.voz.add(voz);
     }
 
     public String fala(String frase){
@@ -12,7 +15,7 @@ public class Papagaio extends Passaro {
     }
 
     @Override
-    public void tallk() {
-
+    public void talk() {
+        voz.forEach(System.out::println);
     }
 }
